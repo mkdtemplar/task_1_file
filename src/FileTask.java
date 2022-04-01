@@ -34,7 +34,7 @@ public class FileTask
                 }
             }
 
-            writer.write("Total URL and URL's words: " + countURL + "\n");
+            writer.write("Total URL words: " + countURL + "\n");
             writer.write("Total IPv6 words: " + countIPv6 + "\n");
 
             System.out.println(countURL);
