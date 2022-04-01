@@ -17,17 +17,17 @@ public class FileTask
             BufferedReader read = new BufferedReader(new InputStreamReader(url.openStream()));
             BufferedWriter writer = new BufferedWriter(new FileWriter("src/result.txt", true));
 
-            String[] words= null;
+            String[] words;
             while ((s = read.readLine()) != null)
             {
                 words = s.split("\\s+");
                 for (String word : words)
                 {
-                    if (word.equals("URL") || word.equals("URL's"))
+                    if (word.contains("URL"))
                     {
                         countURL++;
                     }
-                    if (word.equals("Ipv6"));
+                    if (word.contains("IPv6"))
                     {
                         countIPv6++;
                     }
